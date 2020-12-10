@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOPin</title>
-</head>
-<body>
-    <h1>Hello!</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <input list="browsers" name="dropdown" />
+    <datalist id="browsers">
+      <option value="Beer Name"></option>
+      <option value="Style"></option>
+      <option value="Brewery"></option>
+      <option value="ABV"></option>
+      <option value="Location"></option>
+    </datalist>
 
-    
+    <!-- Button to display all beers -->
+    <div>
+      <button id="showBeers">Show All Beers</button>
+    </div>
+
+    <!-- Empty container to hold list of beers -->
+    <div id="empContainer"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
